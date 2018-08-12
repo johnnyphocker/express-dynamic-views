@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My first view</title>
+  <link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+	<h1>My name is {{name}} {{lastName}}!</h1>
+	{{#if lastName}}
+	    <h2>This will be displayed!!</h2>
+	{{/if}}
+
+	<ul>
+	  {{#each cities}}
+	    <li>{{this}}</li>
+	  {{else}}
+	    <p>No cities yet!</p>
+	  {{/each}}
+	</ul>
+</body>
+</html>
